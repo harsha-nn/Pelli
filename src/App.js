@@ -4,7 +4,8 @@ import './App.css';
 // import Navigation from '../src/Components/Navigation/Navigation';
 // import SideNav from '../src/Components/Navigation/Sidenav';
 // import Loadable from 'react-loadable';
-import Menu from './Components/Menu/Menu';
+// import Menu from './Components/Menu/Menu';
+import Main from './Components/Main/Main';
 // import BasicExample from './Components/BasicExample';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -22,8 +23,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Menu />
-        <h1> This is home page</h1>
+        <Main />
+        
       </div>
     );
   }

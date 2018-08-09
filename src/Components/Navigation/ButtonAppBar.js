@@ -34,7 +34,7 @@ function ButtonAppBar(props) {
             <MenuIcon onClick={onMenuClick}  />
           </IconButton>
           <Typography variant="title" color="inherit" className={classes.flex}>
-            pelli
+            {props.navbarName}
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
