@@ -1,6 +1,7 @@
 .content {
-    background-color: blue;
-    padding: 20px;
+    background:linear-gradient(to right, rgb(128, 0, 64), rgb(128, 0, 0));
+    height: 550px;
+    /* padding: 20px; */
 }
 .content h2 {
     padding: 0;
