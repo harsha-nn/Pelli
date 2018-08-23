@@ -5,10 +5,11 @@ import DashP2 from '../../Components/DashP2/DashP2';
 import {Grid, Paper } from '@material-ui/core';
 import SmallCardList from '../../Components/SmallCardList/SmallCardList';
 import {members} from "../../members";
+// import Navigation from "../Navigation/Navigation";
 
 const Dashboard = () => {
     return (
-        <div>
+        <div style={{"background":"linear-gradient(to right, rgb(128, 0, 64), rgb(128, 0, 0))"}}>
         <Grid container xs spacing = {16} >
             <Grid item xs  >
                 <Paper className="grow shadow-5" style={{"height":"200px"}} >

@@ -33,7 +33,7 @@ function ButtonAppBar(props) {
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             <MenuIcon onClick={onMenuClick}  />
           </IconButton>
-          <Typography variant="title" color="inherit" className={classes.flex}>
+          <Typography variant="title" color="red" className={classes.flex}>
             {props.navbarName}
           </Typography>
           <Button color="inherit">Login</Button>

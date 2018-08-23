@@ -1,0 +1,11 @@
+.myNav {
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+}
+
+.content {
+    background:linear-gradient(to right, rgb(128, 0, 64), rgb(128, 0, 0));
+    height: 550px;
+    /* padding: 20px; */
+}

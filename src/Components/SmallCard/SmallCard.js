@@ -46,7 +46,7 @@ import React from 'react';
 
 const SmallCard = (props) =>{
     return (
-        <div className="tc grow bg-light-maroon br3 pa3 ma2 dib bw2 shadow-5'">
+        <div className="tc grow bg-light-maroon br3 pa3 ma2 dib bw2 shadow-5'" >
             <img src={props.img} alt="img" />
             <p>Name: {props.fname} </p>
             <p> Age: {props.Age} </p>

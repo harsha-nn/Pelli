@@ -6,26 +6,49 @@ import './App.css';
 // import Loadable from 'react-loadable';
 // import Menu from './Components/Menu/Menu';
 // import Main from './Views/Main/Main'
-import MenuBar from './Views/Menu/MenuBar';
+// import MenuBar from './Views/Menu/MenuBar';
+import Navigation from "./Views/Navigation/Navigation";
+import Dashboard from './Views/Dashboard/Dashboard';
 // import BasicExample from './Components/BasicExample';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
 class App extends Component {
-  // constructor (){
-  //   super();
-  //   this.state = {
-  //     showMenu: true
-  //   }
-  // }
+  constructor (){
+    super();
+    this.state = {
+      route: 'signin',
+      isSignedIn: true,
+    }
+  }
  
+  onRouteChange= (route) => {
+    console.log(route);
+    if( route ==='signout'){
+      this.setState({isSignedIn: false}) //changing to true for testing. Change to false later
+    }else if(route === 'home'){
+      this.setState({isSignedIn: true})
+    }
+    this.setState({route: route});
+  }
 
   render() {
+    const {isSignedIn,route} = this.state;
     return (
       <div className="App">
         {/* <Main /> */}
-        <MenuBar />
+        
+        <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
+        {route === 'home' 
+          ?  <div>
+              <Dashboard />
+            </div>
+          :(  route==='signin'
+              ?<div> Please Sign In  Tid:  pwd: Login</div>
+              :<div>Hello Please register</div>
+            )
+        }
         
       </div>
     );
